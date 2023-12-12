@@ -1,37 +1,48 @@
+/* Add these styles for the new dynamic elements */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
-}
-
-header {
-    background-color: #007BFF;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-
-header h1 {
     margin: 0;
+    display: flex;
 }
 
-header p {
-    margin: 5px 0;
+nav li {
+    margin-right: 20px;
 }
 
-section {
-    padding: 20px;
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
-#portfolio img {
-    max-width: 100%;
-    height: auto;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-#contact a {
+nav a:hover {
     color: #007BFF;
 }
+
+.section {
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add other existing styles below */
