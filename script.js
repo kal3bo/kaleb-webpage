@@ -5,13 +5,13 @@ document.addEventListener('scroll', function () {
     // Change background color on scroll
     if (scrollPosition > 50) {
         document.body.classList.add('nav-scrolled');
-        document.querySelectorAll('.section').forEach(function (section) {
-            section.classList.add('section-scrolled');
+        document.querySelectorAll('.dark-section').forEach(function (section) {
+            section.classList.add('dark-section-scrolled');
         });
     } else {
         document.body.classList.remove('nav-scrolled');
-        document.querySelectorAll('.section').forEach(function (section) {
-            section.classList.remove('section-scrolled');
+        document.querySelectorAll('.dark-section').forEach(function (section) {
+            section.classList.remove('dark-section-scrolled');
         });
     }
 });
