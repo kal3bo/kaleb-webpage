@@ -1,4 +1,4 @@
-/* Add these styles for the updated layout and dynamic background */
+/* Global styles */
 
 body {
     background: linear-gradient(45deg, #272727, #333333);
@@ -21,6 +21,8 @@ body::before {
     background: linear-gradient(45deg, #272727, #333333);
     opacity: 0.2;
 }
+
+/* Navigation bar styles */
 
 nav {
     background-color: rgba(0, 0, 0, 0.9);
@@ -54,18 +56,11 @@ nav a:hover {
     color: #007BFF;
 }
 
-.fixed-section {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-}
+/* Logo and name alignment styles */
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 50px;
+.logo-section {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -73,80 +68,20 @@ nav a:hover {
     margin-right: 10px;
 }
 
-.dark-section {
+h1 {
+    margin: 0;
+    font-size: 1.5em; /* Adjust the font size as needed */
     color: #fff;
-    padding: 50px 0;
 }
 
-.dark-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+/* Container styles */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
-.dark-section p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.dark-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.dark-section li {
-    margin-bottom: 10px;
-}
-
-.experience-item {
-    margin-bottom: 40px;
-}
-
-.experience-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.experience-item p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-.experience-item ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.experience-item li {
-    margin-bottom: 5px;
-}
-
-.project {
-    margin-bottom: 40px;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.project h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.project p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-#contact p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
+/* Other existing styles */
 
 /* Add other existing styles below */
