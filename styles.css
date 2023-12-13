@@ -1,10 +1,13 @@
 /* Add these styles for the updated layout and dynamic background */
 
 body {
-    background: linear-gradient(45deg, #2c3e50, #34495e);
+    background: linear-gradient(45deg, #272727, #333333);
     color: #fff;
     overflow-x: hidden;
     transition: background 0.5s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body::before {
@@ -15,27 +18,136 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(45deg, #2c3e50, #34495e);
+    background: linear-gradient(45deg, #272727, #333333);
     opacity: 0.2;
 }
 
-nav, .dark-section {
-    background-color: rgba(44, 62, 80, 0.9);
-    transition: background-color 0.5s ease-in-out;
+nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.nav-scrolled, .dark-section-scrolled {
-    background-color: rgba(44, 62, 80, 1);
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+.fixed-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .container {
-    position: relative;
-    z-index: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
 .logo {
     max-height: 40px;
     margin-right: 10px;
+}
+
+.dark-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+.dark-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.dark-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.dark-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dark-section li {
+    margin-bottom: 10px;
+}
+
+.experience-item {
+    margin-bottom: 40px;
+}
+
+.experience-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 /* Add other existing styles below */
