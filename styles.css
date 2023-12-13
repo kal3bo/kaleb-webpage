@@ -76,7 +76,17 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 50px 0;
-    margin-top: 80px;
+}
+
+.dark-section-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 50px 0;
+    z-index: 998;
 }
 
 .dark-section h2 {
