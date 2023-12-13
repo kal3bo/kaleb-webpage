@@ -22,8 +22,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav li {
@@ -42,20 +42,17 @@ nav a:hover {
 }
 
 /* Logo and name alignment styles */
-.logo-section {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
     max-height: 40px;
-    margin-right: 10px;
+    margin-right: 10px; /* Adjust this as needed to bring the name closer to the logo */
 }
 
 h1 {
     margin: 0;
     font-size: 1.5em;
     color: #333;
+    display: inline-block; /* Makes the h1 inline with the logo */
+    vertical-align: middle; /* Aligns it vertically with the logo */
 }
 
 /* Container styles */
