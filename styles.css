@@ -1,15 +1,32 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Global styles */
 body {
     background: #f5f5f5;
     color: #333;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Updated font */
     margin: 0;
     padding: 0;
+    animation: backgroundShift 30s infinite alternate; /* Dynamic background animation */
+}
+
+/* Dynamic background animation */
+@keyframes backgroundShift {
+    0% {
+        background: linear-gradient(45deg, #6dd5ed, #2193b0);
+    }
+    50% {
+        background: linear-gradient(45deg, #c2e9fb, #a1c4fd);
+    }
+    100% {
+        background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
+    }
 }
 
 /* Header and Navigation bar styles */
 header {
-    background-color: #ffffff;
+    background-color: transparent; /* Make header background transparent */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
@@ -48,4 +65,23 @@ nav a:hover {
 }
 
 .logo {
-    max-height:
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Container styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* Additional styles as needed */
