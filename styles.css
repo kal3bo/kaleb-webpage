@@ -66,7 +66,7 @@ nav a:hover {
 
 /* Logo styles */
 .logo {
-    /*height: auto; /* Updated logo size */
+    height: 1.5em; /* Updated logo size */
     width: auto;
     vertical-align: middle;
     margin-right: 10px;
