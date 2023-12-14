@@ -5,10 +5,10 @@
 body {
     background: #f5f5f5;
     color: #333;
-    font-family: 'Roboto', sans-serif; /* Updated font */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    animation: backgroundShift 30s infinite alternate; /* Dynamic background animation */
+    animation: backgroundShift 30s infinite alternate;
 }
 
 /* Dynamic background animation */
@@ -26,7 +26,7 @@ body {
 
 /* Header and Navigation bar styles */
 header {
-    background-color: transparent; /* Make header background transparent */
+    background-color: transparent;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
@@ -64,8 +64,10 @@ nav a:hover {
     color: #0056b3;
 }
 
+/* Logo styles */
 .logo {
-    max-height: 40px;
+    max-height: 60px;
+    width: auto;
     margin-right: 10px;
 }
 
