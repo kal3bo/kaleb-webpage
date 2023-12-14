@@ -7,8 +7,8 @@ body {
     padding: 0;
 }
 
-/* Navigation bar styles */
-nav {
+/* Header and Navigation bar styles */
+header {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: fixed;
@@ -17,18 +17,23 @@ nav {
     z-index: 1000;
 }
 
+.nav-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: start; /* Aligns items to the start of the nav bar */
-    padding-left: 10px; /* Adds some padding to the left side */
+    justify-content: start;
 }
 
 nav li {
-    margin-right: 20px; /* Adjusts the spacing between nav items */
+    margin-right: 20px;
 }
 
 nav a {
@@ -42,25 +47,5 @@ nav a:hover {
     color: #0056b3;
 }
 
-/* Logo and name alignment styles */
 .logo {
-    max-height: 40px;
-    margin-right: 10px; /* Adjust this as needed */
-}
-
-h1 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #333;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/* Container styles */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 50px;
-}
-
-/* Additional styles as needed */
+    max-height:
